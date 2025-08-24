@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViP_App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="search" placeholder="Enter city name" list="cities" spellcheck="false">
+            <datalist id="cities">
+                <option value="New York">
+                <option value="London">
+                <option value="Mumbai">
+                <option value="Tokyo">
+                <option value="Delhi">
+                <option value="Chennai">
+                <option value="Paris">
+                <option value="Bangkok">
+                <option value="Sydney">
+                <option value="Dubai">
+            </datalist>
+            <button class="Search_button"><img src="Images/Search.png" class="Search_icon"></button>
+        </div>
+        <div class="error">
+            <p>Enter a valid city :)</p>
+        </div>
+        <div class="weather">
+            <img src="Images/rain.png" class="weather_icon" alt="rain">
+            <div class="Curr_weather"> </div>
+            <h1 class="temp">22&deg;C</h1>
+            <h2 class="city">Raipur</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="Images/humidity.png" width="90px" height="70px" alt="Humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <br>
+                        <p style="font-weight: 500; font-size: 18px;">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="Images/wind.png" width="90px" height="70px" alt="Wind">
+                    <div>
+                        <p class="wind">15km/hr</p>
+                        <br>
+                        <p style="font-weight: 500; font-size: 18px;">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
